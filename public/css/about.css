@@ -1,0 +1,18 @@
+/* About Page Styles */
+
+.about {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding-bottom: 80px;
+}
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+.about ul li {
+  padding-bottom: 10px;
+}
+.about ul li svg {
+  margin-right: 4px;
+  color: var(--accent-color);
+}

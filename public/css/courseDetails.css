@@ -1,0 +1,19 @@
+/* Course Details Styles */
+
+.course-details {
+  padding-bottom: 60px;
+}
+.course-details .course-title {
+  color: var(--default-color);
+}
+.course-details .course-info {
+  background: color-mix(in srgb, var(--default-color), transparent 95%);
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.course-details .course-info a {
+  color: var(--accent-color);
+}

@@ -1,0 +1,25 @@
+/* Not Found Page Styles */
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+.not-found a {
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border: 2px solid var(--accent-color);
+  border-radius: 50px;
+  padding: 14px 50px;
+  transition: all 0.2s ease-in-out;
+  background-color: var(--surface-color);
+  color: var(--accent-color);
+}
+.not-found a:hover {
+  background-color: var(--accent-color);
+  color: var(--surface-color);
+}

@@ -1,0 +1,80 @@
+/* Navbar Styles */
+
+.navbar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  z-index: 50;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 3px #00000025;
+}
+.navbar.hidden {
+  top: -80px;
+  box-shadow: 0 2px 3px transparent !important;
+}
+.navbar .navbar-brand {
+  color: var(--accent-color) !important;
+}
+.navbar .navbar-toggler {
+  padding: 0 !important;
+  border: 0 !important;
+  --bs-navbar-toggler-focus-width: 0 !important;
+}
+.navbar .navbar-collapse {
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.navbar .navbar-nav {
+  width: 350px;
+  margin: 0 auto;
+}
+.navbar .nav-link {
+  transition: all 0.2s ease-in-out;
+  padding: 0 12px 12px !important;
+  position: relative;
+}
+.navbar .nav-link.active {
+  color: var(--accent-color) !important;
+}
+.navbar .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+@media screen and (min-width: 576px) {
+  .navbar .navbar-nav {
+    width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar .navbar-nav {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navbar .navbar-collapse {
+    position: relative;
+    top: auto;
+  }
+  .navbar .navbar-nav {
+    gap: 24px;
+    width: auto;
+  }
+  .navbar .nav-link {
+    padding: 0 !important;
+  }
+  .navbar .nav-link.active::after {
+    content: "";
+    display: block;
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -28px;
+  }
+}
