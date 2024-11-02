@@ -6,6 +6,7 @@ import CourseDetails from "./pages/courseDetails/CourseDetails";
 import Trainers from "./pages/trainers/Trainers";
 import Pricing from "./pages/pricing/Pricing";
 import NotFound from "./pages/notFound/NotFound";
+import Events from "./pages/events/Events";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/events" element={<Events />} />
         <Route path="/trainers" element={<Trainers />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/courses/:id" element={<CourseDetails />} />
