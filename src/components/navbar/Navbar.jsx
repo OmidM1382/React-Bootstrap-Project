@@ -5,32 +5,30 @@ import "../../../public/css/navbar.css";
 
 const navLinks = [
   {
-    id: 1,
     href: "/",
     content: "Home",
   },
   {
-    id: 2,
     href: "/about",
     content: "About",
   },
   {
-    id: 3,
+    href: "/courses",
+    content: "Courses",
+  },
+  {
     href: "/trainers",
     content: "Trainers",
   },
   {
-    id: 4,
     href: "/events",
     content: "Events",
   },
   {
-    id: 5,
     href: "/pricing",
     content: "Pricing",
   },
   {
-    id: 6,
     href: "/contact",
     content: "Contact",
   },
@@ -61,9 +59,9 @@ const Navbar = () => {
             <NavbarBs.Toggle aria-controls="basic-navbar-nav" />
             <NavbarBs.Collapse id="basic-navbar-nav">
               <Nav>
-                {navLinks.map((navLink) => (
+                {navLinks.map((navLink, idx) => (
                   <Nav.Link
-                    key={navLink.id}
+                    key={idx}
                     as={Link}
                     to={navLink.href}
                     className={`${

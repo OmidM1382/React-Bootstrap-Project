@@ -5,7 +5,6 @@ import About2 from "../../assets/images/about-2.jpg";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Countssection from "../../components/countsSection/Countssection"
 import "../../../public/css/about.css";
 
 const About = () => {
@@ -15,7 +14,7 @@ const About = () => {
 
   return (
     <main>
-      <PageTitle title="About" page="About" />
+      <PageTitle title="About Us" page="About Us" />
       <section className="aboutPage_section">
         <Container>
           <Row className="g-4 flex-xl-row-reverse">
@@ -58,7 +57,6 @@ const About = () => {
           </Row>
         </Container>
       </section>
-      <Countssection />
     </main>
   );
 };
