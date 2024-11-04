@@ -8,6 +8,7 @@ import Pricing from "./pages/pricing/Pricing";
 import NotFound from "./pages/notFound/NotFound";
 import Events from "./pages/events/Events";
 import Contact from "./pages/contact/Contact"
+import Courses from "./pages/courses/Courses"
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/courses" element={<Courses />} />
         <Route path="/events" element={<Events />} />
         <Route path="/trainers" element={<Trainers />} />
         <Route path="/pricing" element={<Pricing />} />
