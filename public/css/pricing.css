@@ -1,9 +1,9 @@
 /* Pricing Page Styles */
 
-.pricing {
+.pricing_section {
   padding-bottom: 80px;
 }
-.pricing .pricing-item {
+.pricing_section .pricing-item {
   background-color: var(--surface-color);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -12,7 +12,7 @@
   position: relative;
   overflow: hidden;
 }
-.pricing .pricing-item h3 {
+.pricing_section .pricing-item h3 {
   margin: -20px -20px 20px -20px;
   padding: 20px 15px;
   font-size: 16px;
@@ -20,31 +20,31 @@
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   background: color-mix(in srgb, var(--default-color), transparent 95%);
 }
-.pricing .pricing-item h4 {
+.pricing_section .pricing-item h4 {
   font-size: 36px;
 }
-.pricing .pricing-item h4 span {
+.pricing_section .pricing-item h4 span {
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   font-size: 16px;
   font-weight: 300;
 }
-.pricing ul {
+.pricing_section ul {
   padding: 15px 0;
   list-style: none;
   text-align: center;
   line-height: 20px;
   font-size: 14px;
 }
-.pricing ul li {
+.pricing_section ul li {
   padding-bottom: 16px;
 }
-.pricing .btn-wrap {
+.pricing_section .btn-wrap {
   background: color-mix(in srgb, var(--default-color), transparent 95%);
   margin: 0 -20px -20px -20px;
   padding: 20px 15px;
   text-align: center;
 }
-.pricing .btn-buy {
+.pricing_section .btn-buy {
   background: var(--accent-color);
   color: var(--contrast-color);
   display: inline-block;
@@ -54,6 +54,6 @@
   font-size: 14px;
   transition: all 0.2s ease-in-out;
 }
-.pricing .btn-buy:hover {
+.pricing_section .btn-buy:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }

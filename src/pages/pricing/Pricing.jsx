@@ -37,7 +37,7 @@ const Pricing = () => {
   return (
     <main>
       <PageTitle title="Pricing" page="Pricing" />
-      <div className="pricing">
+      <section className="pricing_section">
         <Container>
           <Row className="g-4">
             {pricingCards.map((pricingCard) => (
@@ -70,7 +70,7 @@ const Pricing = () => {
             ))}
           </Row>
         </Container>
-      </div>
+      </section>
     </main>
   );
 };

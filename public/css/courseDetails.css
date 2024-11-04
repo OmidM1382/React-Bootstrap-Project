@@ -1,12 +1,12 @@
 /* Course Details Styles */
 
-.course-details {
+.course-details_section {
   padding-bottom: 60px;
 }
-.course-details .course-title {
+.course-details_section .course-title {
   color: var(--default-color);
 }
-.course-details .course-info {
+.course-details_section .course-info {
   background: color-mix(in srgb, var(--default-color), transparent 95%);
   padding: 10px 15px;
   margin-bottom: 15px;
@@ -14,6 +14,6 @@
   align-items: center;
   justify-content: space-between;
 }
-.course-details .course-info a {
+.course-details_section .course-info a {
   color: var(--accent-color);
 }

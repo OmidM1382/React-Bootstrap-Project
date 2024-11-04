@@ -1,26 +1,26 @@
 /* Trainers Pgae Styles */
 
-.trainers {
+.trainers_section {
   padding-bottom: 80px;
 }
-.trainers .trainer-img {
+.trainers_section .trainer-img {
   margin: 0 80px;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
 }
-.trainers .trainer-info {
+.trainers_section .trainer-info {
   margin-top: 30px;
   text-align: center;
 }
-.trainers .trainer-info span {
+.trainers_section .trainer-info span {
   font-style: italic;
   display: block;
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   margin-bottom: 10px;
 }
-.trainers .trainer-info p {
+.trainers_section .trainer-info p {
   margin-bottom: 0;
   font-size: 14px;
 }

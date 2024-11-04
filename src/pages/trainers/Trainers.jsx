@@ -33,7 +33,7 @@ const Trainers = () => {
       ) : (
         <main>
           <PageTitle title="Trainers" page="Trainers" />
-          <div className="trainers">
+          <section className="trainers_section">
             <Container>
               <Row xs={1} md={2} xl={3} className="g-5">
                 {trainers.map((trainer) => (
@@ -56,7 +56,7 @@ const Trainers = () => {
                 ))}
               </Row>
             </Container>
-          </div>
+          </section>
         </main>
       )}
     </>

@@ -35,7 +35,7 @@ const CourseDetails = () => {
       ) : (
         <main>
           <PageTitle title="Course Details" page="Course Details" />
-          <div className="course-details">
+          <section className="course-details_section">
             <Container>
               <Row>
                 <Col
@@ -87,7 +87,7 @@ const CourseDetails = () => {
                 </Col>
               </Row>
             </Container>
-          </div>
+          </section>
         </main>
       )}
     </>
