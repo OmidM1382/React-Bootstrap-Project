@@ -1,8 +1,8 @@
 import { Card, Col } from "react-bootstrap";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import { UserRound } from "lucide-react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const CourseItem = ({ data }) => {

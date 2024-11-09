@@ -1,6 +1,6 @@
-import { Card, Col, Container, Row, Button } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import PageTitle from "../../components/pageTitle/PageTitle";
-import { Link } from "react-router-dom";
+import EventItem from "../../components/eventItem/EventItem";
 import "../../../public/css/events.css";
 
 const eventItems = [
@@ -26,18 +26,7 @@ const Events = () => {
         <Container>
           <Row xs={1} lg={2} className="g-4">
             {eventItems.map((item, idx) => (
-              <Col key={idx}>
-                <Card>
-                  <Card.Img variant="top" src={item.imgUrl} />
-                  <Card.Body>
-                    <Card.Title>
-                      <Link to="">{item.title}</Link>
-                    </Card.Title>
-                    <div className="mb-3">{item.date}</div>
-                    <Card.Text>{item.text}</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Col>
+              <EventItem key={idx} data={item} />
             ))}
           </Row>
         </Container>
