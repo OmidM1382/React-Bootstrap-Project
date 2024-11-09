@@ -16,3 +16,8 @@
   margin-right: 4px;
   color: var(--accent-color);
 }
+.testimonials_section .testimonials-title {
+  color: var(--heading-color);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}

@@ -28,7 +28,7 @@ const Pricing = () => {
       <PageTitle title="Pricing" page="Pricing" />
       <section className="pricing_section">
         <Container>
-          <Row className="g-4">
+          <Row xs={1} md={2} lg={3} xl={4} className="g-4">
             {pricingItems.map((pricingItem, idx) => (
               <PricingItem key={idx} data={pricingItem} />
             ))}

@@ -5,6 +5,7 @@ import About2 from "../../assets/images/about-2.jpg";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import CountsSection from "../../components/countsSection/CountsSection";
 import "../../../public/css/about.css";
 
 const About = () => {
@@ -55,6 +56,13 @@ const About = () => {
               </ul>
             </Col>
           </Row>
+        </Container>
+      </section>
+      <CountsSection />
+      <section className="testimonials_section">
+        <Container>
+          <h2 className="testimonials-title">What are they saying</h2>
+          
         </Container>
       </section>
     </main>

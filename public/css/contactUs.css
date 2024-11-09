@@ -1,0 +1,46 @@
+/* Contact Us Page Styles */
+
+.contact-us_section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding-top: 8px;
+  padding-bottom: 40px;
+}
+.contact-us_section .icon-wrapper {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+.contact-us_section form .form-control {
+  font-size: 14px;
+  padding: 10px 15px;
+  box-shadow: none;
+  border-radius: 0;
+  color: var(--default-color);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
+  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
+}
+.contact-us_section form .form-control:focus {
+  border-color: var(--accent-color);
+}
+.contact-us_section button {
+  color: var(--contrast-color);
+  background: var(--accent-color) !important;
+  border: 0;
+  padding: 10px 30px 12px 30px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 50px;
+}
+.contact-us_section button:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%) !important;
+}
