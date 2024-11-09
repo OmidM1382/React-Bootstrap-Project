@@ -3,7 +3,7 @@ import PageTitle from "../../components/pageTitle/PageTitle";
 import PricingItem from "../../components/pricingItem/PricingItem";
 import "../../../public/css/pricing.css";
 
-const pricingCards = [
+const pricingItems = [
   {
     header: "Free",
     price: "0",
@@ -29,8 +29,8 @@ const Pricing = () => {
       <section className="pricing_section">
         <Container>
           <Row className="g-4">
-            {pricingCards.map((pricingCard, idx) => (
-              <PricingItem key={idx} data={pricingCard} />
+            {pricingItems.map((pricingItem, idx) => (
+              <PricingItem key={idx} data={pricingItem} />
             ))}
           </Row>
         </Container>
