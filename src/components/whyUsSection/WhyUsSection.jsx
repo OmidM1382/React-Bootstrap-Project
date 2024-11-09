@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Aos from "aos";
-import "aos/dist/aos.css"
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 import {
   ArrowRight,
@@ -9,8 +9,9 @@ import {
   Gem,
   Inbox,
 } from "lucide-react";
+import WhyUsItem from "../whyUsItem/WhyUsItem";
 
-const cards = [
+const whyUsItems = [
   {
     id: 1,
     icon: <FileChartColumnIncreasing size={40} />,
@@ -36,15 +37,22 @@ const cards = [
 
 const WhyUsSection = () => {
   useEffect(() => {
-    Aos.init()
-  }, [])
+    Aos.init();
+  }, []);
 
   return (
     <>
       <section id="whyUs" className="whyUs_section">
         <Container>
           <Row className="g-4">
-            <Col xs={12} xl={4} data-aos="fade-up" data-aos-delay="400" data-aos-duration="800" data-aos-once="true">
+            <Col
+              xs={12}
+              xl={4}
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="800"
+              data-aos-once="true"
+            >
               <div className="whyUs-box">
                 <h3 className="mb-3">Why Choose Our Products?</h3>
                 <p className="mb-3">
@@ -64,14 +72,8 @@ const WhyUsSection = () => {
             </Col>
             <Col xs={12} xl={8}>
               <Row className="g-4">
-                {cards.map((card) => (
-                  <Col xs={12} xl={4} key={card.id} data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-once="true">
-                    <div className="icon-box">
-                      {card.icon}
-                      <h4>{card.title}</h4>
-                      <p className="text-muted mb-0">{card.description}</p>
-                    </div>
-                  </Col>
+                {whyUsItems.map((whyUsItem, idx) => (
+                  <WhyUsItem key={idx} data={whyUsItem} />
                 ))}
               </Row>
             </Col>
