@@ -15,11 +15,11 @@ const AboutSection = () => {
     <>
       <section id="about" className="about_section">
         <Container>
-          <Row className="g-4 flex-lg-row-reverse">
-            <Col className="col-12 col-xl-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-once="true">
+          <Row xs={1} lg={2} className="g-4 flex-lg-row-reverse">
+            <Col data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-once="true">
               <img src={About} className="img-fluid" />
             </Col>
-            <Col className="col-12 col-xl-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-once="true">
+            <Col data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-once="true">
               <h2 className="about-title">
                 Voluptatem dignissimos provident quasi corporis
               </h2>

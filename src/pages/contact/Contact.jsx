@@ -1,16 +1,16 @@
 import PageTitle from "../../components/pageTitle/PageTitle";
 import { Mail, MapPin, Phone } from "lucide-react";
-import {
-  Col,
-  Container,
-  Stack,
-  Row,
-  Form,
-  Button,
-} from "react-bootstrap";
+import { Col, Container, Stack, Row, Form, Button } from "react-bootstrap";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import "../../../public/css/contactUs.css";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <main>
       <PageTitle title="Contact Us" page="Contact Us" />
@@ -22,6 +22,10 @@ const Contact = () => {
                 direction="horizontal"
                 gap={4}
                 className="align-items-center mb-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="800"
+                data-aos-once="true"
               >
                 <div className="icon-wrapper">
                   <MapPin />
@@ -35,6 +39,10 @@ const Contact = () => {
                 direction="horizontal"
                 gap={4}
                 className="align-items-center mb-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="800"
+                data-aos-once="true"
               >
                 <div className="icon-wrapper">
                   <Phone />
@@ -48,6 +56,10 @@ const Contact = () => {
                 direction="horizontal"
                 gap={4}
                 className="align-items-center mb-4"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="800"
+                data-aos-once="true"
               >
                 <div className="icon-wrapper">
                   <Mail />
@@ -58,7 +70,14 @@ const Contact = () => {
                 </div>
               </Stack>
             </Col>
-            <Col xs={12} xl={8}>
+            <Col
+              xs={12}
+              xl={8}
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="800"
+              data-aos-once="true"
+            >
               <Form>
                 <Row xs={1} xl={2} className="g-4 mb-4">
                   <Col>

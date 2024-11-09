@@ -30,7 +30,7 @@ const CoursesSection = () => {
         <section id="courses" className="courses_section">
           <Container>
             <h2 className="courses-title">POPULAR COURSES</h2>
-            <Row xs={1} md={2} lg={3} className="g-4">
+            <Row xs={1} md={2} xl={3} className="g-4">
               {courses.map((course) => (
                 <CourseItem key={course.id} data={course} />
               ))}

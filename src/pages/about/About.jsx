@@ -1,12 +1,49 @@
+import CountsSection from "../../components/countsSection/CountsSection";
 import PageTitle from "../../components/pageTitle/PageTitle";
 import { Container, Row, Col } from "react-bootstrap";
-import { CircleCheck } from "lucide-react";
-import About2 from "../../assets/images/about-2.jpg";
+import { CircleCheck, Quote } from "lucide-react";
 import { useEffect } from "react";
+import About2 from "../../assets/images/about-2.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import CountsSection from "../../components/countsSection/CountsSection";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay, Pagination } from "swiper/modules";
 import "../../../public/css/about.css";
+
+const testimonials = [
+  {
+    imgURL: "./src/assets/images/testimonials-1.jpg",
+    fullName: "Saul Goodman",
+    major: "Ceo & Founder",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorem, corrupti ea sapiente excepturi, molestias neque fugit quaerat maiores aliquid, corporis possimus dignissimos illum autem earum quae veritatis alias ipsa.",
+  },
+  {
+    imgURL: "./src/assets/images/testimonials-2.jpg",
+    fullName: "Sara Wilsson",
+    major: "Designer",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorem, corrupti ea sapiente excepturi, molestias neque fugit quaerat maiores aliquid, corporis possimus dignissimos illum autem earum quae veritatis alias ipsa.",
+  },
+  {
+    imgURL: "./src/assets/images/testimonials-3.jpg",
+    fullName: "Jena Karlis",
+    major: "Store Owner",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorem, corrupti ea sapiente excepturi, molestias neque fugit quaerat maiores aliquid, corporis possimus dignissimos illum autem earum quae veritatis alias ipsa.",
+  },
+  {
+    imgURL: "./src/assets/images/testimonials-4.jpg",
+    fullName: "Matt Brandon",
+    major: "Freelancer",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorem, corrupti ea sapiente excepturi, molestias neque fugit quaerat maiores aliquid, corporis possimus dignissimos illum autem earum quae veritatis alias ipsa.",
+  },
+  {
+    imgURL: "./src/assets/images/testimonials-5.jpg",
+    fullName: "John Larson",
+    major: "Entrepreneur",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo dolorem, corrupti ea sapiente excepturi, molestias neque fugit quaerat maiores aliquid, corporis possimus dignissimos illum autem earum quae veritatis alias ipsa.",
+  },
+];
 
 const About = () => {
   useEffect(() => {
@@ -18,10 +55,8 @@ const About = () => {
       <PageTitle title="About Us" page="About Us" />
       <section className="aboutPage_section">
         <Container>
-          <Row className="g-4 flex-xl-row-reverse">
+          <Row xs={1} lg={2} className="g-4 flex-lg-row-reverse">
             <Col
-              xs={12}
-              xl={6}
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="800"
@@ -30,8 +65,6 @@ const About = () => {
               <img src={About2} className="img-fluid" />
             </Col>
             <Col
-              xs={12}
-              xl={6}
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="800"
@@ -62,7 +95,45 @@ const About = () => {
       <section className="testimonials_section">
         <Container>
           <h2 className="testimonials-title">What are they saying</h2>
-          
+          <Swiper
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+            data-aos-once="true"
+            slidesPerView={1}
+            grabCursor={true}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination, Autoplay]}
+            breakpoints={{
+              992: {
+                slidesPerView: 2,
+              },
+            }}
+          >
+            {testimonials.map((testimonial, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="testimonial-wrapper">
+                  <div className="testimonial-item">
+                    <img src={testimonial.imgURL} />
+                    <h4>{testimonial.fullName}</h4>
+                    <h5 className="major">{testimonial.major}</h5>
+                    <p>
+                      <Quote className="quote-icon-left" />
+                      <span className="text-muted">{testimonial.text}</span>
+                      <Quote className="quote-icon-right" />
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </Container>
       </section>
     </main>

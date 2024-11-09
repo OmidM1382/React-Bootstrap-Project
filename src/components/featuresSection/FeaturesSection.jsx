@@ -71,7 +71,7 @@ const FeaturesSection = () => {
     <>
       <section id="features" className="features_section">
         <Container>
-          <Row xs={1} md={3} xl={4} className="g-4">
+          <Row xs={1} md={2} lg={3} xl={4} className="g-4">
             {featureItems.map((featureItem, idx) => (
               <FeatureItem key={idx} data={featureItem} />
             ))}

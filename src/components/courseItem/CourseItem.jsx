@@ -12,7 +12,7 @@ const CourseItem = ({ data }) => {
 
   return (
     <Col
-      data-aos="zoom-in-up"
+      data-aos="fade-up"
       data-aos-delay="200"
       data-aos-duration="800"
       data-aos-once="true"

@@ -32,7 +32,7 @@ const Courses = () => {
           <PageTitle title="Courses" page="Courses" />
           <section className="courses_section">
             <Container>
-              <Row xs={1} md={2} lg={3} className="g-4">
+              <Row xs={1} md={2} xl={3} className="g-4">
                 {courses.map((course) => (
                   <CourseItem key={course.id} data={course} />
                 ))}
