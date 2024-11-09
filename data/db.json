@@ -39,49 +39,5 @@
       "available_seats": "60",
       "schedule": "5.00 pm - 7.00pm"
     }
-  ],
-  "trainers": [
-    {
-      "id": 1,
-      "imgURL": "/src/assets/images/trainer-1.jpg",
-      "name": "Antonio",
-      "major": "Business",
-      "description": "Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow"
-    },
-    {
-      "id": 2,
-      "imgURL": "/src/assets/images/trainer-2.jpg",
-      "name": "Lana",
-      "major": "Marketing",
-      "description": "Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut"
-    },
-    {
-      "id": 3,
-      "imgURL": "/src/assets/images/trainer-3.jpg",
-      "name": "Brandon",
-      "major": "Maths",
-      "description": "Illum minima ea autem doloremque ipsum quidem quas aspernatur modi ut praesentium vel tque sed facilis at qui"
-    },
-    {
-      "id": 4,
-      "imgURL": "/src/assets/images/trainer-4.jpg",
-      "name": "Amanda Jepson",
-      "major": "Foreign Languages",
-      "description": "Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur"
-    },
-    {
-      "id": 5,
-      "imgURL": "/src/assets/images/trainer-5.jpg",
-      "name": "Brian Doe",
-      "major": "Web Development",
-      "description": "Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit"
-    },
-    {
-      "id": 6,
-      "imgURL": "/src/assets/images/trainer-6.jpg",
-      "name": "Josepha Palas",
-      "major": "Business",
-      "description": "Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel"
-    }
   ]
 }

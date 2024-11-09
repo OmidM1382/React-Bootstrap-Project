@@ -1,9 +1,7 @@
-import { Container, Row, Col } from "react-bootstrap";
-import { useEffect } from "react";
+import { Container, Row } from "react-bootstrap";
 import PageTitle from "../../components/pageTitle/PageTitle";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import "../../../public/css/trainers.css";
+import Trainer from "../../components/trainer/Trainer";
 
 const trainers = [
   {
@@ -51,10 +49,6 @@ const trainers = [
 ];
 
 const Trainers = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
-
   return (
     <>
       <main>
@@ -63,22 +57,7 @@ const Trainers = () => {
           <Container>
             <Row xs={1} md={2} xl={3} className="g-5">
               {trainers.map((trainer, idx) => (
-                <Col
-                  key={idx}
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-aos-duration="800"
-                  data-aos-once="true"
-                >
-                  <div className="trainer-img">
-                    <img src={trainer.imgURL} className="img-fluid" />
-                  </div>
-                  <div className="trainer-info">
-                    <h4>{trainer.name}</h4>
-                    <span>{trainer.major}</span>
-                    <p className="text-muted">{trainer.description}</p>
-                  </div>
-                </Col>
+                <Trainer key={idx} data={trainer} />
               ))}
             </Row>
           </Container>
