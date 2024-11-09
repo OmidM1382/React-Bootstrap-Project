@@ -74,7 +74,7 @@ const CourseDetails = () => {
                   </div>
                   <div className="course-info">
                     <h5>Courses Fee</h5>
-                    <div>{courses.price}</div>
+                    <div>${courses.price}</div>
                   </div>
                   <div className="course-info">
                     <h5>Available Seats</h5>
