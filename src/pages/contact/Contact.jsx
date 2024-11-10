@@ -4,6 +4,8 @@ import { Col, Container, Stack, Row, Form, Button } from "react-bootstrap";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { MapContainer, TileLayer } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 import "../../../public/css/contactUs.css";
 
 const Contact = () => {
@@ -15,6 +17,16 @@ const Contact = () => {
     <main>
       <PageTitle title="Contact Us" page="Contact Us" />
       <section className="contact-us_section">
+        <MapContainer
+          center={[50, 2.5]}
+          zoom={13}
+          style={{ height: "400px", marginBottom: "40px" }}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+        </MapContainer>
         <Container>
           <Row className="g-4">
             <Col xs={12} xl={4}>
