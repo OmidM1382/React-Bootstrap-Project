@@ -14,7 +14,7 @@ const Contact = () => {
   }, []);
 
   return (
-    <main>
+    <>
       <PageTitle title="Contact Us" page="Contact Us" />
       <section className="contact-us_section">
         <MapContainer
@@ -118,7 +118,7 @@ const Contact = () => {
           </Row>
         </Container>
       </section>
-    </main>
+    </>
   );
 };
 

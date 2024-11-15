@@ -24,7 +24,7 @@ const pricingItems = [
 
 const Pricing = () => {
   return (
-    <main>
+    <>
       <PageTitle title="Pricing" page="Pricing" />
       <section className="pricing_section">
         <Container>
@@ -35,7 +35,7 @@ const Pricing = () => {
           </Row>
         </Container>
       </section>
-    </main>
+    </>
   );
 };
 

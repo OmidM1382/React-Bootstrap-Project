@@ -27,7 +27,7 @@ const CoursesSection = () => {
       {isLoading ? (
         <Loading />
       ) : (
-        <section id="courses" className="courses_section">
+        <section className="courses_section">
           <Container>
             <h2 className="courses-title">POPULAR COURSES</h2>
             <Row xs={1} md={2} xl={3} className="g-4">

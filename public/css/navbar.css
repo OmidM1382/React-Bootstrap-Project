@@ -45,6 +45,23 @@
 .navbar .nav-link:hover {
   color: var(--accent-color) !important;
 }
+.navbar .btn-get-started {
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border: 2px solid var(--accent-color);
+  border-radius: 50px;
+  padding: 12px;
+  transition: all 0.2s ease-in-out;
+  color: var(--accent-color);
+  display: block;
+  width: 160px;
+  text-align: center;
+}
+.navbar .btn-get-started:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
 
 @media screen and (min-width: 576px) {
   .navbar .navbar-nav {

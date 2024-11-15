@@ -73,6 +73,11 @@ const Navbar = () => {
                 ))}
               </Nav>
             </NavbarBs.Collapse>
+            <div className="d-none d-xl-block">
+              <Link to="/courses" className="btn-get-started">
+                Get Started
+              </Link>
+            </div>
           </Container>
         </NavbarBs>
       </header>

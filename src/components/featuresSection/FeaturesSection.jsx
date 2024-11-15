@@ -68,17 +68,15 @@ const featureItems = [
 
 const FeaturesSection = () => {
   return (
-    <>
-      <section id="features" className="features_section">
-        <Container>
-          <Row xs={1} md={2} lg={3} xl={4} className="g-4">
-            {featureItems.map((featureItem, idx) => (
-              <FeatureItem key={idx} data={featureItem} />
-            ))}
-          </Row>
-        </Container>
-      </section>
-    </>
+    <section className="features_section">
+      <Container>
+        <Row xs={1} md={2} lg={3} xl={4} className="g-4">
+          {featureItems.map((featureItem, idx) => (
+            <FeatureItem key={idx} data={featureItem} />
+          ))}
+        </Row>
+      </Container>
+    </section>
   );
 };
 

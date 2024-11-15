@@ -28,7 +28,7 @@ const Courses = () => {
       {isLoading ? (
         <Loading />
       ) : (
-        <main>
+        <>
           <PageTitle title="Courses" page="Courses" />
           <section className="courses_section">
             <Container>
@@ -39,7 +39,7 @@ const Courses = () => {
               </Row>
             </Container>
           </section>
-        </main>
+        </>
       )}
     </>
   );

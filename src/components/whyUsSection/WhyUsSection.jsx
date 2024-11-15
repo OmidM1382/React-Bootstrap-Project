@@ -41,46 +41,44 @@ const WhyUsSection = () => {
   }, []);
 
   return (
-    <>
-      <section id="whyUs" className="whyUs_section">
-        <Container>
-          <Row className="g-4">
-            <Col
-              xs={12}
-              xl={4}
-              data-aos="fade-up"
-              data-aos-delay="400"
-              data-aos-duration="800"
-              data-aos-once="true"
-            >
-              <div className="whyUs-box">
-                <h3 className="mb-3">Why Choose Our Products?</h3>
-                <p className="mb-3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis aute irure dolor in reprehenderit Asperiores dolores sed
-                  et. Tenetur quia eos. Autem tempore quibusdam vel
-                  necessitatibus optio ad corporis.
-                </p>
-                <div>
-                  <Link to="/" className="btn-learn-more">
-                    <span>Learn More</span>
-                    <ArrowRight />
-                  </Link>
-                </div>
+    <section className="whyUs_section">
+      <Container>
+        <Row className="g-4">
+          <Col
+            xs={12}
+            xl={4}
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="800"
+            data-aos-once="true"
+          >
+            <div className="whyUs-box">
+              <h3 className="mb-3">Why Choose Our Products?</h3>
+              <p className="mb-3">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis
+                aute irure dolor in reprehenderit Asperiores dolores sed et.
+                Tenetur quia eos. Autem tempore quibusdam vel necessitatibus
+                optio ad corporis.
+              </p>
+              <div>
+                <Link to="/" className="btn-learn-more">
+                  <span>Learn More</span>
+                  <ArrowRight />
+                </Link>
               </div>
-            </Col>
-            <Col xs={12} xl={8}>
-              <Row className="g-4">
-                {whyUsItems.map((whyUsItem, idx) => (
-                  <WhyUsItem key={idx} data={whyUsItem} />
-                ))}
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-    </>
+            </div>
+          </Col>
+          <Col xs={12} xl={8}>
+            <Row className="g-4">
+              {whyUsItems.map((whyUsItem, idx) => (
+                <WhyUsItem key={idx} data={whyUsItem} />
+              ))}
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 };
 

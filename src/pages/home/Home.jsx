@@ -8,14 +8,14 @@ import "../../../public/css/home.css";
 
 const Home = () => {
   return (
-    <main>
+    <>
       <HeroSection />
       <AboutSection />
       <CountsSection />
       <WhyUsSection />
       <FeaturesSection />
       <CoursesSection />
-    </main>
+    </>
   );
 };
 

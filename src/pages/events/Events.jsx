@@ -20,7 +20,7 @@ const eventItems = [
 
 const Events = () => {
   return (
-    <main>
+    <>
       <PageTitle title="Events" page="Events" />
       <section className="events_section">
         <Container>
@@ -31,7 +31,7 @@ const Events = () => {
           </Row>
         </Container>
       </section>
-    </main>
+    </>
   );
 };
 

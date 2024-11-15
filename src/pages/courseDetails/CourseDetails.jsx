@@ -6,6 +6,7 @@ import { Container, Col, Row } from "react-bootstrap";
 import Loading from "../../components/loading/Loading";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import formatCurrency from "../../utilities/formatCurrency";
 import "../../../public/css/courseDetails.css";
 
 const CourseDetails = () => {
@@ -33,7 +34,7 @@ const CourseDetails = () => {
       {isLoading ? (
         <Loading />
       ) : (
-        <main>
+        <>
           <PageTitle title="Course Details" page="Course Details" />
           <section className="course-details_section">
             <Container>
@@ -74,7 +75,7 @@ const CourseDetails = () => {
                   </div>
                   <div className="course-info">
                     <h5>Courses Fee</h5>
-                    <div>${courses.price}</div>
+                    <div>{formatCurrency(courses.price)}</div>
                   </div>
                   <div className="course-info">
                     <h5>Available Seats</h5>
@@ -88,7 +89,7 @@ const CourseDetails = () => {
               </Row>
             </Container>
           </section>
-        </main>
+        </>
       )}
     </>
   );

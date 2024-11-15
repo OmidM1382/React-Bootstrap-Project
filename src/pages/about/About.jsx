@@ -51,7 +51,7 @@ const About = () => {
   }, []);
 
   return (
-    <main>
+    <>
       <PageTitle title="About Us" page="About Us" />
       <section className="aboutPage_section">
         <Container>
@@ -136,7 +136,7 @@ const About = () => {
           </Swiper>
         </Container>
       </section>
-    </main>
+    </>
   );
 };
 

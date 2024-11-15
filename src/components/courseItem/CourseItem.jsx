@@ -4,6 +4,7 @@ import { UserRound } from "lucide-react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import formatCurrency from "../../utilities/formatCurrency";
 
 const CourseItem = ({ data }) => {
   useEffect(() => {
@@ -18,14 +19,13 @@ const CourseItem = ({ data }) => {
       data-aos-once="true"
     >
       <Card className="course-card">
-        <Card.Img variant="top" src={data.imgURL} className="rounded-0" />
+        <Link to={`/courses/${data.id}`}>
+          <Card.Img variant="top" src={data.imgURL} className="rounded-0" />
+        </Link>
         <Card.Body className="course-card-body">
           <div className="d-flex align-items-center justify-content-between mb-3">
             <div className="course-category">{data.category}</div>
-            <div className="course-price">
-              <span>$</span>
-              {data.price}
-            </div>
+            <div className="course-price">{formatCurrency(data.price)}</div>
           </div>
           <Card.Title className="course-title">
             <Link to={`/courses/${data.id}`}>{data.title}</Link>

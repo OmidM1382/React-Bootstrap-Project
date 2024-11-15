@@ -51,18 +51,16 @@ const trainers = [
 const Trainers = () => {
   return (
     <>
-      <main>
-        <PageTitle title="Trainers" page="Trainers" />
-        <section className="trainers_section">
-          <Container>
-            <Row xs={1} md={2} xl={3} className="g-5">
-              {trainers.map((trainer, idx) => (
-                <Trainer key={idx} data={trainer} />
-              ))}
-            </Row>
-          </Container>
-        </section>
-      </main>
+      <PageTitle title="Trainers" page="Trainers" />
+      <section className="trainers_section">
+        <Container>
+          <Row xs={1} md={2} xl={3} className="g-5">
+            {trainers.map((trainer, idx) => (
+              <Trainer key={idx} data={trainer} />
+            ))}
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };
