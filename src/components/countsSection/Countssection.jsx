@@ -6,25 +6,21 @@ import { useEffect } from "react";
 
 const counts = [
   {
-    id: 1,
     start: "0",
     end: "1232",
     content: "Students",
   },
   {
-    id: 2,
     start: "0",
     end: "64",
     content: "Courses",
   },
   {
-    id: 3,
     start: "0",
     end: "42",
     content: "Events",
   },
   {
-    id: 4,
     start: "0",
     end: "24",
     content: "Trainers",
@@ -40,9 +36,9 @@ const CountsSection = () => {
     <section className="counts_section">
       <Container>
         <Row xs={1} md={3} lg={4} className="g-4">
-          {counts.map((count) => (
+          {counts.map((count, idx) => (
             <Col
-              key={count.id}
+              key={idx}
               className="text-center"
               data-aos="fade-up"
               data-aos-delay="200"
